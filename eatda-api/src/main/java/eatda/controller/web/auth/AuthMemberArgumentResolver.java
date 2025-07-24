@@ -1,8 +1,8 @@
 package eatda.controller.web.auth;
 
 import eatda.controller.web.jwt.JwtManager;
-import eatda.exception.BusinessErrorCode;
-import eatda.exception.BusinessException;
+import eatda.domain.exception.BusinessErrorCode;
+import eatda.domain.exception.BusinessException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.HttpHeaders;

@@ -1,7 +1,7 @@
 package eatda.controller.web.jwt;
 
-import eatda.exception.BusinessErrorCode;
-import eatda.exception.BusinessException;
+import eatda.domain.exception.BusinessErrorCode;
+import eatda.domain.exception.BusinessException;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;

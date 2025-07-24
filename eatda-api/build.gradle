@@ -1,24 +1,11 @@
 plugins {
-    id 'java'
-    id 'org.springframework.boot' version '3.5.0'
-    id 'io.spring.dependency-management' version '1.1.7'
-
     // Rest Docs & Swagger UI
     id 'com.epages.restdocs-api-spec' version '0.18.2'
     id 'org.hidetake.swagger.generator' version '2.18.2'
 
     // Jacoco, sonarcloud
     id 'jacoco'
-    id "org.sonarqube" version "6.2.0.5505"
-}
-
-group = 'net.eatda'
-version = '0.0.1-SNAPSHOT'
-
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
+    id("org.sonarqube") version "6.2.0.5505"
 }
 
 jacoco {
@@ -37,16 +24,6 @@ sonarqube {
     }
 }
 
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
-
-repositories {
-    mavenCentral()
-}
-
 ext {
     set('snippetsDir', file("build/generated-snippets"))
 }
@@ -58,21 +35,6 @@ dependencies {
 
     // Spring boot
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation 'org.springframework.boot:spring-boot-starter-cache'
-
-    // Lombok
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-
-    // DB
-    runtimeOnly 'com.h2database:h2'
-    runtimeOnly 'com.mysql:mysql-connector-j'
-    implementation 'org.flywaydb:flyway-core'
-    implementation 'org.flywaydb:flyway-mysql'
-    implementation 'com.github.ben-manes.caffeine:caffeine' // in-memory cache
 
     // JWT
     implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
@@ -80,8 +42,6 @@ dependencies {
     implementation 'io.jsonwebtoken:jjwt-gson:0.11.5'
 
     // Test
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'io.rest-assured:rest-assured:5.5.0'
 
     // Documentation

@@ -3,7 +3,7 @@ package eatda.controller.article;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import eatda.controller.BaseControllerTest;
-import eatda.domain.article.Article;
+import eatda.domain.domain.article.Article;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 

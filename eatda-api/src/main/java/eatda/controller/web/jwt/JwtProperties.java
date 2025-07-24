@@ -1,6 +1,6 @@
 package eatda.controller.web.jwt;
 
-import eatda.exception.InitializeException;
+import eatda.domain.exception.InitializeException;
 import io.jsonwebtoken.security.Keys;
 import java.time.Duration;
 import java.util.Base64;

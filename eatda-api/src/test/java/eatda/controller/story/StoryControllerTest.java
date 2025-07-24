@@ -8,8 +8,8 @@ import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.doThrow;
 
 import eatda.controller.BaseControllerTest;
-import eatda.exception.BusinessErrorCode;
-import eatda.exception.BusinessException;
+import eatda.domain.exception.BusinessErrorCode;
+import eatda.domain.exception.BusinessException;
 import eatda.util.ImageUtils;
 import eatda.util.MappingUtils;
 import io.restassured.response.Response;

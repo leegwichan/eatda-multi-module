@@ -1,6 +1,6 @@
 package eatda.config;
 
-import eatda.exception.InitializeException;
+import eatda.domain.exception.InitializeException;
 import java.util.List;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

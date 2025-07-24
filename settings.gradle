@@ -1,0 +1,3 @@
+rootProject.name = 'eatda-multi-module'
+include 'eatda-domain'
+include 'eatda-api'

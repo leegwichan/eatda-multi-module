@@ -6,9 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.method;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 
-import eatda.domain.client.map.MapClient;
-import eatda.domain.client.map.StoreSearchResult;
 import java.util.List;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +25,11 @@ class MapClientTest {
 
     @Autowired
     private MapClient mapClient;
+
+    @BeforeEach
+    void setUpMapClient() {
+        KakaoProperties kakaoProperties = new KakaoProperties("z116bf75dgh76c253hg7c4b123ab3609");
+    }
 
     private void setMockServer(HttpMethod method, String url, String responseBody) {
         mockServer.expect(requestTo(startsWith(url)))

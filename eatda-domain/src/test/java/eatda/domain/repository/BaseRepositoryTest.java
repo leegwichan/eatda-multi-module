@@ -1,12 +1,12 @@
 package eatda.domain.repository;
 
-import eatda.domain.fixture.CheerGenerator;
-import eatda.domain.fixture.MemberGenerator;
-import eatda.domain.fixture.StoreGenerator;
 import eatda.domain.repository.member.MemberRepository;
 import eatda.domain.repository.store.CheerRepository;
 import eatda.domain.repository.store.StoreRepository;
 import eatda.domain.repository.story.StoryRepository;
+import eatda.fixture.CheerGenerator;
+import eatda.fixture.MemberGenerator;
+import eatda.fixture.StoreGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.Import;

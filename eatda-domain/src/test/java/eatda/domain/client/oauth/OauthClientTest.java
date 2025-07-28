@@ -6,10 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.method;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 
-import eatda.domain.client.oauth.OauthClient;
-import eatda.domain.client.oauth.OauthMemberInformation;
-import eatda.domain.client.oauth.OauthProperties;
-import eatda.domain.client.oauth.OauthToken;
 import eatda.domain.exception.BusinessErrorCode;
 import eatda.domain.exception.BusinessException;
 import java.net.URI;
@@ -17,6 +13,7 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.client.RestClientTest;
+import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.client.MockRestServiceServer;

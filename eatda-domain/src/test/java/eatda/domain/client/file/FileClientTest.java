@@ -7,7 +7,6 @@ import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 
-import eatda.domain.client.file.FileClient;
 import eatda.domain.exception.BusinessErrorCode;
 import eatda.domain.exception.BusinessException;
 import java.net.MalformedURLException;

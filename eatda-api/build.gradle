@@ -31,10 +31,11 @@ ext {
 dependencies {
     // Module
     implementation project(':eatda-domain')
-    testImplementation project(path: ':eatda-domain', configuration: 'testArtifacts') // TODO testArtifacts 제거
+    testImplementation project(':eatda-test-utils')
 
     // Spring boot
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // TODO 제거
 
     // JWT
     implementation 'io.jsonwebtoken:jjwt-api:0.11.5'

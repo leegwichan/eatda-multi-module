@@ -12,8 +12,8 @@ import static org.springframework.restdocs.payload.JsonFieldType.STRING;
 import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
 import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
 
-import eatda.controller.store.StorePreviewResponse;
-import eatda.controller.store.StoreSearchResponse;
+import eatda.api.controller.store.StorePreviewResponse;
+import eatda.api.controller.store.StoreSearchResponse;
 import eatda.api.controller.store.StoreSearchResponses;
 import eatda.api.controller.store.StoresResponse;
 import eatda.api.document.BaseDocumentTest;

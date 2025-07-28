@@ -3,7 +3,7 @@ package eatda.api.service.store;
 import eatda.domain.client.map.MapClient;
 import eatda.domain.client.map.StoreSearchResult;
 import eatda.api.controller.store.CheerPreviewResponse;
-import eatda.controller.store.CheerRegisterRequest;
+import eatda.api.controller.store.CheerRegisterRequest;
 import eatda.api.controller.store.CheerResponse;
 import eatda.api.controller.store.CheersResponse;
 import eatda.domain.domain.Image;

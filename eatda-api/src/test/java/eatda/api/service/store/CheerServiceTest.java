@@ -7,7 +7,7 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.doReturn;
 
 import eatda.domain.client.map.StoreSearchResult;
-import eatda.controller.store.CheerRegisterRequest;
+import eatda.api.controller.store.CheerRegisterRequest;
 import eatda.api.controller.store.CheerResponse;
 import eatda.api.controller.store.CheersResponse;
 import eatda.domain.domain.member.Member;

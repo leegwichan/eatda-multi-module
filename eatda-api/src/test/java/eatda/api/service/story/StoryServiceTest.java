@@ -7,7 +7,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import eatda.domain.client.map.StoreSearchResult;
-import eatda.controller.story.StoriesResponse.StoryPreview;
+import eatda.api.controller.story.StoriesResponse.StoryPreview;
 import eatda.api.controller.story.StoryRegisterRequest;
 import eatda.api.controller.story.StoryResponse;
 import eatda.domain.domain.ImageKey;

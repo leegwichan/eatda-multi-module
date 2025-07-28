@@ -3,11 +3,11 @@ package eatda.api.service.store;
 import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.toList;
 
-import eatda.domain.client.map.MapClient;
-import eatda.domain.client.map.StoreSearchResult;
-import eatda.controller.store.StorePreviewResponse;
+import eatda.api.controller.store.StorePreviewResponse;
 import eatda.api.controller.store.StoreSearchResponses;
 import eatda.api.controller.store.StoresResponse;
+import eatda.domain.client.map.MapClient;
+import eatda.domain.client.map.StoreSearchResult;
 import eatda.domain.domain.store.Store;
 import eatda.domain.repository.store.CheerRepository;
 import eatda.domain.repository.store.StoreRepository;

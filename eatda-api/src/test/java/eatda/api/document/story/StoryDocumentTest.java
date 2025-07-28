@@ -8,18 +8,18 @@ import static org.springframework.restdocs.headers.HeaderDocumentation.headerWit
 import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
 import static org.springframework.restdocs.request.RequestDocumentation.partWithName;
 
-import eatda.controller.story.StoriesResponse;
+import eatda.api.controller.story.StoriesResponse;
 import eatda.api.controller.story.StoryRegisterRequest;
-import eatda.controller.story.StoryRegisterResponse;
+import eatda.api.controller.story.StoryRegisterResponse;
 import eatda.api.controller.story.StoryResponse;
 import eatda.api.document.BaseDocumentTest;
 import eatda.api.document.RestDocsRequest;
 import eatda.api.document.RestDocsResponse;
 import eatda.api.document.Tag;
-import eatda.domain.exception.BusinessErrorCode;
-import eatda.domain.exception.BusinessException;
 import eatda.api.util.ImageUtils;
 import eatda.api.util.MappingUtils;
+import eatda.domain.exception.BusinessErrorCode;
+import eatda.domain.exception.BusinessException;
 import io.restassured.response.Response;
 import java.nio.charset.StandardCharsets;
 import java.util.List;

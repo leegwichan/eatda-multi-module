@@ -18,6 +18,7 @@ import eatda.domain.repository.member.MemberRepository;
 import eatda.domain.repository.store.CheerRepository;
 import eatda.domain.repository.store.StoreRepository;
 import eatda.domain.storage.image.ImageStorage;
+import eatda.domain.domain.store.StoreSearchFilter;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;

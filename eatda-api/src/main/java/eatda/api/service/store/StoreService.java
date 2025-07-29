@@ -12,6 +12,7 @@ import eatda.domain.domain.store.Store;
 import eatda.domain.repository.store.CheerRepository;
 import eatda.domain.repository.store.StoreRepository;
 import eatda.domain.storage.image.ImageStorage;
+import eatda.domain.domain.store.StoreSearchFilter;
 import java.util.List;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;

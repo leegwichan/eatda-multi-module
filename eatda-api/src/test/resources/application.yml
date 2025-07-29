@@ -9,7 +9,7 @@ spring:
     activate:
       on-profile: test
     import:
-      - optional:file:.env-local[.properties]
+      - optional:file:../.env-local[.properties]
 
   cloud:
     aws:

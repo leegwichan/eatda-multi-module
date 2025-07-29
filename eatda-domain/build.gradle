@@ -22,19 +22,3 @@ dependencies {
 tasks.named('test', Test) {
     useJUnitPlatform()
 }
-
-//// TODO 아래 설정은 테스트 파일까지 같이 말아서 넘기는 방법이다. 아래 내용을 지워야 모듈 분리가 완료된다.
-//task testJar(type: Jar) {
-//    archiveClassifier = 'test'
-//    from sourceSets.test.output
-//}
-//
-//// 2. testArtifacts 라는 custom configuration 정의
-//configurations {
-//    testArtifacts
-//}
-//
-//// 3. testJar 결과물을 testArtifacts 로 등록
-//artifacts {
-//    testArtifacts testJar
-//}
